@@ -1,0 +1,37 @@
+{
+    "locais": [
+        {
+            "estado": "SP",
+            "cidade": ["São Paulo", "Campinas", "Santos", "Ribeirão Preto"]
+        },
+        {
+            "estado": "RJ",
+            "cidade": ["Rio de Janeiro", "Niterói", "Campos dos Goytacazes"]
+        },           
+        {
+            "estado": "BH",
+            "cidade": ["Belo Horizonte", "Uberlândia", "Juiz de Fora", "Montes Claros"]
+        },
+        {
+            "estado": "BA",
+            "cidade": ["Salvador", "Feira de Santana", "Vitória da Conquista"]
+        },
+        {
+            "estado": "PR",
+            "cidade": ["Curitiba", "Londrina", "Maringá", "Cascavel"]
+        },
+        {
+            "estado": "RS",
+            "cidade": ["Porto Alegre", "Caxias do Sul", "Pelotas", "Santa Maria"]
+        },
+        {
+            "estado": "CE",
+            "cidade": ["Fortaleza", "Caucaia", "Juazeiro do Norte"]
+        },
+        {
+            "estado": "AM",
+            "cidade": ["Manaus", "Itacoatiara", "Parintins"]
+        }
+    ]
+}
+  

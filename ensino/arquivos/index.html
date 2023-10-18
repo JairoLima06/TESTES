@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TESTE 01</title>
+</head>
+<body>
+    <label>Estado:</label>
+    <select id="estadoSelect">
+        <option value="">Selecione uma cidade</option>
+    </select>
+    <label>Cidade:</label>
+    <select id="cidadeSelect">
+        <option value="">Selecione uma cidade</option>
+    </select>
+    <script>
+        //document.addEventListener("DOMContentLoaded", function () {
+            const estadoSelect = document.getElementById("estadoSelect");
+            let localDate;
+            
+            fetch("dados.json").then((response) => {
+                response.json().then((dados) => {
+                    localDate = dados;
+                    dados.cidades.forEach((teste) => {
+                        console.log(teste);
+                    });
+                });
+            });
+
+            /* fetch("cidades.json")
+                .then(response => response.json())
+                .then(data => {
+                    data.cidades.forEach(cidade => {
+                        const option = document.createElement("option");
+                        option.value = cidade;
+                        option.textContent = cidade;
+                        // cidadeSelect.appendChild(option);
+                        cidadeSelect.innerHTML += `<option>${cidade}</option>`;
+                        console.log(option);
+                    }); 
+                })
+                .catch(error => console.error("Erro ao carregar o JSON: " + error));
+
+            cidadeSelect.addEventListener("change", function () {
+                cidadeSelecionada.textContent = cidadeSelect.value;
+            });
+        });*/
+    </script>
+</body>
+</html>
