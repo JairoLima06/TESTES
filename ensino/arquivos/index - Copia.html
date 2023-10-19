@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TESTE 01</title>
+</head>
+<body>
+
+    <label>Estado:</label>
+    <select id="estadoSelect">
+    <option value=""></option>
+    </select>
+    <p><span id="estadoSelecionada"></span></p>
+    
+    <label>Cidade:</label>
+    <select id="cidadeSelect"></select>
+    <option value=""></option>
+    <p><span id="cidadeSelecionada"></span></p>
+    
+    <script>
+   
+            
+           
+        // Faz uma requisição para carregar o arquivo JSON
+            fetch("dados.json").then((response) => {
+                response.json().then((dados) => {
+                    console.log(dados)
+                    dados.locais.forEach((e) => {
+                        estadoSelect.innerHTML += `<option>${e.estado}</option>`
+                    });
+                });
+            });    
+        
+
+            estadoSelect.addEventListener("change", function () {
+            const estadoSelect = document.getElementById("estadoSelect");
+            const estadoSelecionada = document.getElementById("estadoSelecionada");
+
+            });
+        </script>
+        <script>         
+            fetch("dados.json").then((response) => {
+                response.json().then((dados) => {
+                    console.log(dados)
+                    dados.locais.forEach((c) => {
+                        cidadeSelect.innerHTML += `<option>${c.cidade}</option>`
+                    });
+                })
+            })
+
+            cidadeSelect.addEventListener("change", function () {
+            const cidadeSelect = document.getElementById("cidadeSelect");
+            const cidadeSelecionada = document.getElementById 
+            ("cidadeSelecionada");
+            })
+        </script>
+
+</body>
+</html>
